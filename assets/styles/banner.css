@@ -1,0 +1,56 @@
+.banner {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/banner-verao.jpg');
+    background-repeat: no-repeat;
+    inset: 0;
+    background-size: cover;
+    /* background-position: bottom; */
+    z-index: -1;
+    opacity: 0.5;
+    background-position: bottom;
+
+}
+
+.banner__titulo {
+    padding: 3.2em 0;
+    text-align: center;
+    font-size: 32px;
+    font-family: var(--fonte-titulo);
+    color: var(--cinza);
+    /* background-color: transparent; */
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner {
+        height: 70vh;
+    }
+
+    .banner__titulo {
+        font-size: 64px;
+    }
+
+}
+
+@media screen and (min-width: 1360px) {
+
+    .banner {
+        height: 60vh;
+    }
+
+    .banner__titulo {
+        padding: 0 3em;
+    }
+
+
+}

@@ -1,0 +1,112 @@
+.banner__experiencia {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner__experiencia::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/experiencia-banner.jpg');
+    background-repeat: no-repeat;
+    inset: 0;
+    background-size: cover;
+    /* background-position: bottom; */
+    z-index: -1;
+    opacity: 0.5;
+    background-position: bottom;
+
+}
+
+/* SOBRE */
+
+.sobre__img--exp {
+    /* background-image: url('../img/exp-sobre.svg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 381px;
+    border-radius: 15px;
+}
+
+.acessibilidade {
+    background-image: url('../img/exp-sobre.svg');
+}
+
+.sustentabilidade {
+    background-image: url('../img/exp-sobre-2.svg');
+}
+
+.atracoes {
+    background-image: url('../img/exp-sobre-3.svg');
+}
+
+@media screen and (min-width: 768px) {
+
+    .sobre__img--exp {
+        width: 609px;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media screen and (min-width: 1360px) {
+
+    .banner__experiencia {
+        height: 60vh;
+    }
+
+    .banner__experiencia::before {
+        background-position: top;
+    }
+
+    .sobre--exp {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .sobre__info--exp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .sobre__img--exp {
+        height: 381px;
+        width: 50%;
+    }
+
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo__acessibilidade {
+        text-align: left;
+        padding: 0 2em;
+    }
+    
+    .conteudo__sustentabilidade {
+        text-align: right;
+        /* padding: 0 2em; */
+        
+    }
+    
+    .conteudo__atracoes {
+        text-align: left;
+        padding: 0 2em;
+    }
+
+    .sustentabilidade {
+        order: 1;
+    }
+
+}

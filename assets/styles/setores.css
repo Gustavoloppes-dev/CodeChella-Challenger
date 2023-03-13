@@ -1,0 +1,187 @@
+.banner__setores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner__setores::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/setores-banner.jpg');
+    background-repeat: no-repeat;
+    inset: 0;
+    background-size: cover;
+    /* background-position: bottom; */
+    z-index: -1;
+    opacity: 0.5;
+    background-position: bottom;
+
+}
+
+.setores__img {
+    width: 100%;
+}
+
+.setores__info {
+    text-align: left;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.setores__titulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cinza);
+}
+
+.locais__lista {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.local__cor {
+    width: 2em;
+    height: 2em;
+}
+
+.premium {
+   background-color: var(--azul);
+}
+
+.comum {
+    background-color: var(--rosa);
+}
+
+.terreo {
+    background-color: var(--verde);
+}
+
+.superiores {
+    background-color: var(--purple);
+}
+
+.rampa {
+    background-color: var(--azul)
+}
+
+.locais__area {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza);
+}
+
+.setores__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+    margin-bottom: 2em;
+}
+
+.cards__container {
+    margin-bottom: 3em;
+}
+
+.img__cards {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 381px;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+.img__cards--pista {
+    background-image: url('../img/Mapa--pista.svg');
+}
+
+.img__cards--premium {
+    background-image: url('../img/Mapa--premium.svg');
+}
+
+.img__cards--cadeiras {
+    background-image: url('../img/Mapa--cadeira.svg');
+}
+
+.cards__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+    margin: 1.5em 0;
+}
+
+.cards__conteudo {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza);
+    line-height: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .setores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__cards {
+        width: 55%;
+        margin: 0 auto;
+        height: 281px;
+    }
+
+    .cards__conteudo {
+        padding: 0 2em;
+    }
+
+}
+
+@media screen and (min-width: 1360px) {
+
+    .banner__setores {
+        height: 60vh;
+    }
+
+    .setores {
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    .setores__img {
+       width: 50%;
+       margin: 0;
+    }
+
+    .setores__info {
+        width: 50%;
+    }
+
+    .setores__cards {
+        display: flex;
+        justify-content: space-evenly;
+       height: 800px;
+    }
+
+    .cards__container {
+        width: 29.21%;
+    }
+
+    .img__cards {
+        width: 100%;
+    }
+
+    .cards__conteudo {
+        padding: 0;        
+    }
+
+    .cards__container:nth-child(2) {
+        align-self: self-end;
+    }
+}

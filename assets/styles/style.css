@@ -1,0 +1,37 @@
+@import url('header.css');
+@import url('banner.css');
+@import url('sobre.css');
+@import url('lineup.css');
+@import url('rodape.css');
+@import url('experiencia.css');
+@import url('setores.css');
+
+:root {
+    --gradiente-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 60%, #FACF9D 100%);
+    
+    --fonte-titulo:'Calistoga', cursive;
+    --fonte-principal:'Raleway', sans-serif;
+    --azul-escuro: rgba(46, 123, 162, 1);
+    --branco: rgba(255, 255, 255, 1);
+    --cinza: rgba(68, 68, 68, 1);
+    --amarelo: rgba(250, 207, 157, 1);
+    --mostarda: #DF9010;
+    --azul: rgba(14, 125, 241, 1);
+    --rosa: rgba(254, 1, 110, 1);
+    --verde: rgba(1, 168, 158, 1);
+    --purple: rgba(63, 81, 181, 1);
+}
+
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background: var(--gradiente-verao);
+    /* background: linear-gradient(180deg, #BFDAE6, #FCF0DD, #FACF9D); */
+}
+
+.sobre, .lineup, .rodape, .setores, .setores__sobre {
+    padding: 2em 1.5em;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Setores</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="assets/img/Logo-codechella.svg" alt="Logo da CodeChella" class="logo__imagem">
+            </a>
+        </h1>
+        <nav class="menu__cabecalho">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="experiencia.html" class="menu__link">A experiência</a></li>
+                <li class="menu__item"><a href="setores.html" class="menu__link">Mapa de Setores</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Informações</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Ingresso</a></li>
+            </ul>
+        </nav>
+
+        <img class="menu__icone" src="assets/img/menu-icone.svg" alt="">
+    </header>
+
+    <main>
+        <section class="banner__setores" aria-label="imagem de um parque de diversões">
+            <h2 class="banner__titulo">Mapa de Setores</h2>
+        </section>
+
+        <section class="setores">
+            <img src="assets/img/Mapa-setores.svg" alt="Mapa mostrando os setores" class="setores__img">
+            <div class="setores__info">
+                <span class="setores__titulo">Legenda:</span>
+                <ul class="setores__locais">
+                    <li class="locais__lista">
+                        <span class="local__cor premium"></span>
+                        <p class="locais__area">Pista Premium</p>
+                    </li>
+                    <li class="locais__lista">
+                        <span class="local__cor comum"></span>
+                        <p class="locais__area">Pista Comum</p>
+                    </li>
+                    <li class="locais__lista">
+                        <span class="local__cor terreo"></span>
+                        <p class="locais__area">Cadeiras Térreo</p>
+                    </li>
+                    <li class="locais__lista">
+                        <span class="local__cor superiores"></span>
+                        <p class="locais__area">Cadeiras Superiores</p>
+                    </li>
+                    <li class="locais__lista">
+                        <span class="local__cor rampa"></span>
+                        <p class="locais__area">Rampa</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="setores__sobre">
+            <h3 class="setores__titulo">Mais detalhes sobre os setores:</h3>
+            <div class="setores__cards">
+                <div class="cards__container">
+                    <div class="img__cards img__cards--pista" aria-label="mulher com um bambolê na mão" role="img"></div>
+                    <h3 class="cards__titulo">Pista</h3>
+                    <p class="cards__conteudo">Pista convencional, atendida pelos bares e banheiros das laterais do 
+                        estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma 
+                        grade.
+                    </p>
+                </div>
+                <div class="cards__container">
+                    <div class="img__cards img__cards--premium" aria-label="pessoas dançando durante o festival"></div>
+                    <h3 class="cards__titulo">Pista Premium</h3>
+                    <p class="cards__conteudo">Pista mais próxima do palco, com acesso muito próximo a banheiros e bares 
+                        num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a 
+                        essa área.
+                    </p>
+                </div>
+                <div class="cards__container">
+                    <div class="img__cards img__cards--cadeiras" aria-label="arquibancada com varias cadeiras com os assentos levantados"></div>
+                    <h3 class="cards__titulo">Cadeiras</h3>
+                    <p class="cards__conteudo">Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e 
+                        bares, visão um pouco elevada em relação às pistas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <img src="assets/img/Logo__rodape.svg" alt="" class="rodape__logo">
+            <div class="rodape__rede--social">
+                <h3 class="rede__social--titulo">Acesse nossas redes:</h3>
+                <ul class="rede__social--lista">
+                    <li class="rede__social--item">
+                        <a href="#" class="rede__social--wp">
+                            <img src="assets/img/Ícones--wp .svg" alt="icone do whatsapp">
+                        </a>
+                    </li>
+                    <li class="rede__social--item">
+                        <a href="#" class="rede__social--twitch">
+                            <img src="assets/img/Ícone--twitch.svg" alt="icone da Twitch">
+                        </a>
+                    </li>
+                    <li class="rede__social--item">
+                        <a href="#" class="rede__social--instagram">
+                            <img src="assets/img/Ícone--instagram.svg" alt="icone do Instagram">
+                        </a>
+                    </li>
+                    <li class="rede__social--item">
+                        <a href="#" class="rede__social--twitter">
+                            <img src="assets/img/Ícone--twitter.svg" alt="icone do Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape__copy"">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+</body>
+</html>

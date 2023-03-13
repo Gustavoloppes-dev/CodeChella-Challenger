@@ -1,0 +1,86 @@
+.sobre__img--div {
+    background-image: url('../img/sobre-img-verao.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 381px;
+    border-radius: 15px;
+}
+
+.sobre__titulo {
+    margin-top: 1.5em;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+}
+
+.sobre__conteudo {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza);
+    margin: 1.5em 0;
+    line-height: 40px;
+}
+
+.sobre__botao {
+    color: var(--branco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--azul-escuro);
+    padding: .9em 2em;
+    
+    box-shadow: 4px 4px 0px #444444;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sobre__botao--icone {
+    height: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* .sobre__img {
+        width: 90%;
+    } */
+
+    .sobre__img--div {
+        /* background-image: url('../img/sobre-img-verao--tablet.svg'); */
+        min-width: 609px;
+    }
+    
+    .sobre__titulo {
+        padding: 0 4em;
+    }
+
+    .sobre__conteudo {
+        padding: 0 2em;
+        /* word-spacing: 4px; */
+    }
+
+    .sobre__botao {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 1360px) {
+
+    .sobre {
+        display: flex;
+    }
+
+    .sobre__titulo {
+        margin-top: 1em;
+    }
+
+    .sobre__conteudo {
+        padding: 0 4em;
+    }
+
+}
