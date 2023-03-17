@@ -1,0 +1,116 @@
+.banner__ingressos--comprados {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner__ingressos--comprados::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img/ingresso-comprado-banner.jpg');
+  background-repeat: no-repeat;
+  inset: 0;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
+  background-position: bottom;
+}
+
+.ingresso__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    color: var(--cinza);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.ingresso__card {
+    background: var(--gradiente-verao);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+}
+
+.ingresso__card--cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.ingresso__card--qrcode {
+    background-image: url(../img/Qr-code.svg);
+    min-height: 190px;
+    min-width: 248px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ingresso__card--dados {
+    margin-top: 2em;
+}
+
+.ingresso__card--nome {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+    margin-bottom: 1em;
+}
+
+.ingresso__card--texto {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza);
+    line-height: 40px;
+    padding: 0 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+
+    .ingresso {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media screen and (min-width: 1360px) {
+
+    .banner__ingressos--comprados {
+        height: 70vh;
+    }
+
+    .banner__ingressos--comprados::before {
+        background-position: center;
+    }
+
+    .ingresso {
+        width: 70%;
+    }
+
+    .ingresso__card {
+        padding: 1em;
+    }
+
+    .ingresso__card--info {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .ingresso__card--qrcode {
+        height: 256px;
+    }
+
+    .ingresso__card--nome {
+        margin-top: 0;
+    }
+
+    .ingresso__card--dados {
+        margin-top: .5em;
+    }
+}

@@ -5,9 +5,12 @@
 @import url('rodape.css');
 @import url('experiencia.css');
 @import url('setores.css');
+@import url('informacoes.css');
+@import url('ingresso.css');
+@import url('ingresso__comprado.css');
 
 :root {
-    --gradiente-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 60%, #FACF9D 100%);
+    --gradiente-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
     
     --fonte-titulo:'Calistoga', cursive;
     --fonte-principal:'Raleway', sans-serif;
@@ -20,6 +23,8 @@
     --rosa: rgba(254, 1, 110, 1);
     --verde: rgba(1, 168, 158, 1);
     --purple: rgba(63, 81, 181, 1);
+    --azul-claro: #C8DEEF;
+    --azul-medio: #2E7BA2;
 }
 
 
@@ -32,6 +37,16 @@ body {
     /* background: linear-gradient(180deg, #BFDAE6, #FCF0DD, #FACF9D); */
 }
 
-.sobre, .lineup, .rodape, .setores, .setores__sobre {
+.sobre, .lineup, .rodape,
+.setores, .setores__sobre, .duvidas,
+.formulario, .ingresso {
     padding: 2em 1.5em;
 }
+
+/* @media screen and (min-width: 768px) {
+
+    .ingresso {
+        padding: 2em 4em;
+    }
+
+} */
