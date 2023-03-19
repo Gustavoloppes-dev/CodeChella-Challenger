@@ -54,3 +54,44 @@
   }
 
 }
+
+/* MENU HAMBURGER */
+
+.menu__container--mobile {
+  display: none;
+}
+
+.ativo {
+  display: block;
+}
+
+.btc__menu {
+  background: transparent;
+  border: none;
+}
+
+.menu__lista--mobile {
+  position: absolute;
+  right: 0px;
+  top: 130px;
+  width: 55vw;
+  height: 35vh;
+  background-color: var(--azul-escuro);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 1em 0; */
+}
+
+.menu__icone {
+  position: relative;
+}
+
+.menu__link--borda {
+  display: inline-block;
+  border-top: 1px solid var(--branco);
+  min-width: 160px;
+  padding: .5em 0;
+}
+

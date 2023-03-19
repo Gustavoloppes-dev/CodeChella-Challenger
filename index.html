@@ -28,7 +28,20 @@
             </ul>
         </nav>
 
-        <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+        <div class="menu__mobile">
+            <button class="btc__menu" id="btc__menu">
+                <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+            </button>
+           <div class="menu__container--mobile" id="menu__container">
+                <ul class="menu__lista--mobile">
+                    <li class="menu__item"><a href="experiencia.html" class="menu__link ">A experiência</a></li>
+                    <li class="menu__item"><a href="setores.html" class="menu__link menu__link--borda">Mapa de Setores</a></li>
+                    <li class="menu__item"><a href="informacoes.html" class="menu__link menu__link--borda">Informações</a></li>
+                    <li class="menu__item"><a href="ingresso.html" class="menu__link menu__link--borda">Ingresso</a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -46,7 +59,7 @@
                     festival diverso, com vários artistas e referências. Divirta-se!
                 </p>
 
-                <a href="#" class="sobre__botao">Comprar ingresso!
+                <a href="ingresso.html" class="sobre__botao">Comprar ingresso!
                     <img src="assets/img/icone_btc_sobre.svg" alt="" class="sobre__botao--icone">
                 </a>
             </div>
@@ -133,5 +146,6 @@
         <p class="rodape__copy"">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
     
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
