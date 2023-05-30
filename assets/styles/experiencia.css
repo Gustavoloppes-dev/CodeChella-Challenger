@@ -57,7 +57,7 @@
 @media screen and (min-width: 1360px) {
 
     .banner__experiencia {
-        height: 60vh;
+        height: 80vh;
     }
 
     .banner__experiencia::before {

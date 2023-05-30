@@ -74,7 +74,7 @@
         width: 80%;
         margin: 0 auto;
     }
-
+    
     
 }
 
@@ -82,7 +82,7 @@
 @media screen and (min-width: 1360px) {
 
     .banner__ingressos--comprados {
-        height: 70vh;
+        height: 80vh;
     }
 
     .banner__ingressos--comprados::before {

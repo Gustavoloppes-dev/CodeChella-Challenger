@@ -23,11 +23,23 @@
                 <li class="menu__item"><a href="experiencia.html" class="menu__link">A experiência</a></li>
                 <li class="menu__item"><a href="setores.html" class="menu__link">Mapa de Setores</a></li>
                 <li class="menu__item"><a href="informacoes.html" class="menu__link">Informações</a></li>
-                <li class="menu__item"><a href="ingresso.html" class="menu__link">Ingresso</a></li>
+                <li class="menu__item"><a href="ingresso.html" class="menu__link" data-ingresso="">Ingresso</a></li>
             </ul>
         </nav>
 
-        <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+        <div class="menu__mobile">
+            <button class="btc__menu" id="btc__menu">
+                <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+            </button>
+           <div class="menu__container--mobile" id="menu__container">
+                <ul class="menu__lista--mobile">
+                    <li class="menu__item"><a href="experiencia.html" class="menu__link ">A experiência</a></li>
+                    <li class="menu__item"><a href="setores.html" class="menu__link menu__link--borda">Mapa de Setores</a></li>
+                    <li class="menu__item"><a href="informacoes.html" class="menu__link menu__link--borda">Informações</a></li>
+                    <li class="menu__item"><a href="ingresso.html" class="menu__link menu__link--borda" data-ingresso="">Ingresso</a></li>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -49,9 +61,9 @@
                     <!-- <img src="assets/img/Qr-code.svg" alt="QrCode" class="ingresso__card--qrcode"> -->
                     <div class="ingresso__card--qrcode"></div>
                     <div class="ingresso__card--dados">
-                        <h4 class="ingresso__card--nome" value="">Moni Hillman</h4>
-                        <p class="ingresso__card--texto">Ingresso Costesia</p>
-                        <p class="ingresso__card--texto">Setor Pista</p>
+                        <h4 class="ingresso__card--nome" value="" id="nome__ingresso"></h4>
+                        <p class="ingresso__card--texto">Entrada regular</p>
+                        <p class="ingresso__card--texto" id="tipo__ingresso" value=""></p>
                         <p class="ingresso__card--texto">Data: 11/03</p>
                         <p class="ingresso__card--texto">Local: São Paulo-SP</p>
                     </div>
@@ -93,5 +105,9 @@
         </div>
         <p class="rodape__copy"">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+
+    <script src="assets/js/menu.js"></script>
+    <!-- <script src="assets/js/ingresso.js"></script> -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

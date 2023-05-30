@@ -23,11 +23,24 @@
                 <li class="menu__item"><a href="experiencia.html" class="menu__link">A experiência</a></li>
                 <li class="menu__item"><a href="setores.html" class="menu__link">Mapa de Setores</a></li>
                 <li class="menu__item"><a href="informacoes.html" class="menu__link">Informações</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Ingresso</a></li>
+                <li class="menu__item"><a href="ingresso.html" class="menu__link" data-ingresso="">Ingresso</a></li>
             </ul>
         </nav>
 
-        <img class="menu__icone" src="assets/img/menu-icone.svg" alt="">
+        <div class="menu__mobile">
+            <button class="btc__menu" id="btc__menu">
+                <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+            </button>
+           <div class="menu__container--mobile" id="menu__container">
+                <ul class="menu__lista--mobile">
+                    <li class="menu__item"><a href="experiencia.html" class="menu__link ">A experiência</a></li>
+                    <li class="menu__item"><a href="setores.html" class="menu__link menu__link--borda">Mapa de Setores</a></li>
+                    <li class="menu__item"><a href="informacoes.html" class="menu__link menu__link--borda">Informações</a></li>
+                    <li class="menu__item"><a href="ingresso.html" class="menu__link menu__link--borda" data-ingresso="">Ingresso</a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -42,13 +55,21 @@
                     <h3 class="cards__duvidas--titulo">Quais serão as atrações?</h3>
                     <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
                 </div>
-                <p class="cards__duvidas--texto">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, 
-                    e o segundo (12/03) com bandas pop. <a href="index.html#line-up" class="cards__duvida--link">Confira o line-up em detalhes clicando neste link!</a></p>
+                <div class="cards__duvidas--conteudo">
+                    <p class="cards__duvidas--texto">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, 
+                        e o segundo (12/03) com bandas pop. <a href="index.html#line-up" class="cards__duvida--link">Confira o line-up em detalhes clicando neste link!</a>
+                    </p>
+                </div>
             </div>
             <div class="cards__duvidas">
                 <div class="cards__duvidas--header">
                     <h3 class="cards__duvidas--titulo">Qual é a classificação etária?</h3>
                     <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
+                </div>
+                <div class="cards__duvidas--conteudo">
+                    <p class="cards__duvidas--texto">A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. 
+                        Menores de 10 anos não podem entrar.
+                    </p>
                 </div>
             </div>
             <div class="cards__duvidas">
@@ -56,17 +77,36 @@
                     <h3 class="cards__duvidas--titulo">Quais são os setores disponíveis?</h3>
                     <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
                 </div>
-            </div>
-            <div class="cards__duvidas">
-                <div class="cards__duvidas--header">
-                    <h3 class="cards__duvidas--titulo">Quais são os itens proibidos?</h3>
-                    <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
+                <div class="cards__duvidas--conteudo">
+                    <p class="cards__duvidas--texto">Pista Premium<br>
+                        Pista Comum <br>
+                        Cadeiras térreo <br>
+                        Cadeiras superiores <br>
+                        Rampas <br>
+                    </p>
                 </div>
             </div>
             <div class="cards__duvidas">
                 <div class="cards__duvidas--header">
                     <h3 class="cards__duvidas--titulo">Quais são os itens proibidos?</h3>
                     <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
+                </div>
+                <div class="cards__duvidas--conteudo">
+                    <p class="cards__duvidas--texto">Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, 
+                        armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, 
+                        substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.
+                    </p>
+                </div>
+            </div>
+            <div class="cards__duvidas">
+                <div class="cards__duvidas--header">
+                    <h3 class="cards__duvidas--titulo">Quem tem direito a meia-entrada?</h3>
+                    <img src="assets/img/arrow_drop_down.svg" alt="" class="cards__seta">
+                </div>
+                <div class="cards__duvidas--conteudo">
+                    <p class="cards__duvidas--texto">De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e 
+                        apresentarem os documentos comprobatórios.
+                    </p>
                 </div>
             </div>
         </section>
@@ -105,5 +145,8 @@
         <p class="rodape__copy"">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
 
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

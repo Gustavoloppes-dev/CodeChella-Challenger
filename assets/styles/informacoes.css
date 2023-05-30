@@ -64,6 +64,30 @@
     color: var(--cinza);
 }
 
+
+
+@media screen and (min-width: 768px) {
+
+    .cards__duvidas--header {
+        cursor: pointer;
+    }
+
+    .cards__duvidas--header:active {
+        user-select: none;
+    }
+
+    .cards__duvidas--conteudo {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .accordion--ativo {
+        height: 190px;
+    }
+
+}
+
 @media screen and (min-width: 1360px) {
 
     .duvidas {
@@ -74,7 +98,7 @@
     }
     
     .cards__duvidas {
-        width: 60%;
+        width: 80%;
     }
 
     .banner__informacoes {

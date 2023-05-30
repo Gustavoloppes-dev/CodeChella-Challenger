@@ -23,11 +23,24 @@
                 <li class="menu__item"><a href="experiencia.html" class="menu__link">A experiência</a></li>
                 <li class="menu__item"><a href="setores.html" class="menu__link">Mapa de Setores</a></li>
                 <li class="menu__item"><a href="informacoes.html" class="menu__link">Informações</a></li>
-                <li class="menu__item"><a href="ingresso.html" class="menu__link">Ingresso</a></li>
+                <li class="menu__item"><a href="ingresso.html" class="menu__link" data-ingresso="">Ingresso</a></li>
             </ul>
         </nav>
 
-        <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+        <div class="menu__mobile">
+            <button class="btc__menu" id="btc__menu">
+                <img class="menu__icone" src="assets/img/menu-icone.svg" alt="icone do menu">
+            </button>
+           <div class="menu__container--mobile" id="menu__container">
+                <ul class="menu__lista--mobile">
+                    <li class="menu__item"><a href="experiencia.html" class="menu__link ">A experiência</a></li>
+                    <li class="menu__item"><a href="setores.html" class="menu__link menu__link--borda">Mapa de Setores</a></li>
+                    <li class="menu__item"><a href="informacoes.html" class="menu__link menu__link--borda">Informações</a></li>
+                    <li class="menu__item"><a href="ingresso.html" class="menu__link menu__link--borda" data-ingresso="">Ingresso</a></li>
+                </ul>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -37,18 +50,21 @@
 
         <section class="formulario">
             <h3 class="formulario__titulo">Preencha o formulário a seguir: </h3>
-            <form action="" class="formulario__info">
+            <form action="ingresso__comprado.html" class="formulario__info">
                 <label for="nome_sobrenome" class="formulario__info--label">Nome Completo:</label>
-                <input type="text" name="nome" id="nome_sobrenome" class="formulario__info--input">
-                
+                <span class="formulario__info--erro" id="erro--nome">O nome do usuario deve possuir 3 caracteres e não pode conter números.</span>
+                <input type="text" name="nome" id="nome_sobrenome" class="formulario__info--input" placeholder="Nome Sobrenome">
+                    
                 <label for="email" class="formulario__info--label">Email:</label>
-                <input type="text" name="email" id="email" class="formulario__info--input">
-                
+                <span class="formulario__info--erro" id="erro--email">Email invalido, ex: nomedeusuario@domínio.com</span>
+                <input type="text" name="email" id="email" class="formulario__info--input" placeholder="exemplo@dominio.com">
+                    
                 <fieldset class="formulario__info--data">
                     <div class="formulario__info--container">
                         <label for="ingresso" class="formulario__info--label">Tipo de ingresso</label>
+                        <span class="formulario__info--erro" id="erro--ingresso">Selecione o seu tipo de ingresso.</span>
                         <select name="ingresso" id="ingresso" class="formulario__info--input formulario__info--select">
-                            <option value="" disabled selected>Tipo de ingresso</option>
+                            <option value="" disabled selected>Escolha seu tipo de ingresso</option>
                             <option value="Pista Premium">Pista Premium</option>
                             <option value="Pista Comum">Pista Comum</option>
                             <option value="Cadeiras Térreo">Cadeiras Térreo</option>
@@ -59,15 +75,16 @@
 
                     <div class="formulario__data--container">
                         <label for="nascimento" class="formulario__info--label">Data de nascimento:</label>
-                        <input type="date" name="data__nascimento" id="nascimento" class="formulario__info--input">
+                        <span class="formulario__info--erro" id="erro--data">Digite uma data de nascimento valida.</span>
+                        <input type="text" placeholder="DD/MM/AAAA" name="data__nascimento" id="nascimento" class="formulario__info--input">
                     </div>
                 </fieldset>
+                <button type="submit" class="botao__avancar">Avançar!
+                    <img src="assets/img/btc-seta.svg" alt="">
+                </button>
+                    
             </form>
-            <a href="#" class="botao__avancar">Avançar!
-                <img src="assets/img/btc-seta.svg" alt="">
-            </a>
         </section>
-
 
     </main>
 
@@ -102,5 +119,9 @@
         </div>
         <p class="rodape__copy"">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/ingresso.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

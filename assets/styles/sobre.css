@@ -71,6 +71,10 @@
 
 @media screen and (min-width: 1360px) {
 
+    .banner {
+        height: 80vh;
+    }
+    
     .sobre {
         display: flex;
     }
@@ -81,6 +85,10 @@
 
     .sobre__conteudo {
         padding: 0 4em;
+    }
+
+    .sobre__botao:hover {
+        background-color: var(--azul-escuro-hover);
     }
 
 }

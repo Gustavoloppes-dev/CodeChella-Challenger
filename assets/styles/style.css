@@ -15,12 +15,14 @@
     --fonte-titulo:'Calistoga', cursive;
     --fonte-principal:'Raleway', sans-serif;
     --azul-escuro: rgba(46, 123, 162, 1);
+    --azul-escuro-hover: rgba(81, 158, 197, 1);
     --branco: rgba(255, 255, 255, 1);
     --cinza: rgba(68, 68, 68, 1);
     --amarelo: rgba(250, 207, 157, 1);
     --mostarda: #DF9010;
     --azul: rgba(14, 125, 241, 1);
     --rosa: rgba(254, 1, 110, 1);
+    --vermelho: rgb(254, 9, 1);
     --verde: rgba(1, 168, 158, 1);
     --purple: rgba(63, 81, 181, 1);
     --azul-claro: #C8DEEF;
