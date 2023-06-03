@@ -107,6 +107,7 @@ form.addEventListener("submit",(evento) => {
     const cadastroUsuario = {
         "nome": usuarioInput,
         "ingresso": ingressoInput,
+        "cadastrado": true,
     }
     
     console.log(cadastroUsuario)

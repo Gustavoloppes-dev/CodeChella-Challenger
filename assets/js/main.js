@@ -5,15 +5,20 @@ const dados = JSON.parse(localStorage.getItem("cadastroUsuario"));
 console.log(dados);
 console.log(dados.nome);
 console.log(dados.ingresso);
+console.log(dados.cadastrado);
 console.log(menuBotaoIngresso.href);
 
 
-// campoIngresso.innerHTML = dados.cadastrado
+menuBotaoIngresso.addEventListener("click", () => {
+    if(dados.cadastrado == true){
+        menuBotaoIngresso.href = "ingresso__comprado.html";
 
+    }
 
-if(dados.nome || dados.ingresso) {
-    menuBotaoIngresso.href = "ingresso__comprado.html"
-    campoNome.innerHTML = dados.nome
+})
+
+if(dados.nome !== "" && dados.ingresso !== "") {
+    campoNome.innerText = dados.nome
     campoIngresso.innerHTML = dados.ingresso
     console.log(campoNome.innerHTML);
     console.log(campoIngresso.innerHTML);
